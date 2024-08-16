@@ -6,7 +6,8 @@ import Footer from './Footer'
 function Hero() {
   return (
     <div className='main'>
-      <video src="/video.mp4">
+      <video autoPlay loop muted >
+      <source src='/video.mp4' type='video.mp4'/>
         <div className='flex flex-col items-center mx-56 gap-9'>
           <h1 className='font-extrabold text-[50px] text-center mt-16'>
             Unlock New Horizons with <span className='text-[#f56551] font-serif'>VoyageVista</span>
