@@ -24,12 +24,12 @@ function PlaceCardItem({ place }) {
 
     return (
         <Link to={'https://www.google.com/maps/search/?api=1&query=' + place?.place} target='_blank'>
-            <div className='shadow-md border rounded-xl p-3 mt-2 flex gap-5 hover:scale-105 transition-all hover:shadow-md cursor-auto'>
+            <div className='shadow-md border rounded-xl p-3 mt-2 flex md:gap-5 hover:scale-105 transition-all hover:shadow-md cursor-auto'>
                 <img src={photoUrl?photoUrl:'/placeholder.jpg'} className='h-[150px] w-[150px] rounded-xl object-cover' />
-                <div>
-                    <h2 className='text-md font-bold'>{place.place}</h2>
-                    <p className='text-sm text-gray-400 mt-1'>{place.details}</p>
-                    <h2 className='my-2 text-md'>🕙 {place?.travel_time}</h2>
+                <div className='flex flex-col'>
+                    <h2 className='text-md font-bold px-5 xl:px-3'>{place.place}</h2>
+                    <p className='text-sm text-gray-400 mt-1 px-5 xl:px-3'>{place.details}</p>
+                    <h2 className='my-2 text-md px-5'>🕙 {place?.travel_time}</h2>
                 </div>
             </div>
         </Link>
