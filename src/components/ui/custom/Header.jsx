@@ -93,7 +93,7 @@ function Header() {
                 <DialogTitle className='font-bold text-purple-950 font-serif text-4xl mt-2'>VoyageVista</DialogTitle>
               </div>
               <h2 className='font-bold text-lg mt-6'>Sign In With Google</h2>
-              <p className='text-g)ray-400 text-xs mt-1'>Sign In To The App With Google Authentication Securely</p>
+              <p className='text-gray-400 text-xs mt-1'>Sign In To The App With Google Authentication Securely</p>
               <Button
                 onClick={login}
                 className='w-full mt-5 flex gap-4 items-center'>
